@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --background: #0e0e0e;
+  --gray-line: #dcdde0;
+  --text: #fefefe;
+  --text-highlight: #b3b9ff;
+  --title: #2e384d;
+  --red: #db4437;
+  --green: #2eb711;
+  --yellow: #eedb00;
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+  --blue-twitter: #2aa9e0;
+  --blue-facebook: #4267b2;
+}
+
+/* Tamanho da fonte proporcional à tela */
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+/* Estilização geral do projeto */
+
+body {
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 480 16px "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
